@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ブロック崩しゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- スタート画面 -->
+        <div id="startScreen" style="display: flex;">
+            <h1>ブロック崩しゲーム</h1>
+            <button id="startButton" class="button">スタート</button>
+        </div>
+
+        <!-- ゲーム画面 -->
+        <div id="gameScreen">
+            <div id="countdown"></div>
+            <canvas id="canvas" width="600" height="300"></canvas>
+        </div>
+
+        <!-- 結果画面 -->
+        <div id="resultScreen">
+            <h2 id="resultMessage"></h2>
+            <p id="scoreDisplay"></p>
+            <button id="restartButton" class="button">もう一度</button>
+            <button id="quitButton" class="button">やめる</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
